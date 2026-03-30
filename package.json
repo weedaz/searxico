@@ -1,0 +1,78 @@
+{
+    "name": "searxico",
+    "version": "1.0.0",
+    "description": "A self-hosted favicon cloudflare worker for SearXNG Search Engine.",
+    "homepage": "https://github.com/Aetherinox/searxico-worker",
+    "homepage_cdn": "https://github.com/aetherinox/searxico-cdn",
+    "author": "Aetherinox",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Aetherinox",
+            "email": "118329232+Aetherinox@users.noreply.github.com",
+            "url": "https://github.com/Aetherinox"
+        },
+        {
+            "name": "EuropaServ",
+            "email": "118329232+Aetherinox@users.noreply.github.com",
+            "url": "https://github.com/EuropaServ"
+        }
+    ],
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aetherinox/searxico-worker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Aetherinox/searxico-worker/issues"
+    },
+    "build": {
+        "appId": "com.searxico.cfw.id"
+    },
+    "funding": [
+        {
+            "type": "individual",
+            "url": "https://buymeacoffee.com/aetherinox"
+        }
+    ],
+    "keywords": [
+        "aetherinox",
+        "searxico",
+        "searxng",
+        "searx",
+        "favicon",
+        "cloudflare",
+        "cloudflare-worker",
+        "worker",
+        "wrangler",
+        "self-hosting"
+    ],
+    "scripts": {
+        "deploy": "wrangler deploy",
+        "dev": "wrangler dev",
+        "start": "wrangler dev",
+        "login": "wrangler login",
+        "pretty": "prettier --write '**/*.{js,json}'",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "root": "node root.js",
+        "root:generate": "node root.js generate",
+        "env:root": "npx --quiet env-cmd --no-override node root.js",
+        "env:uuid": "npx --quiet env-cmd --no-override node root.js uuid",
+        "env:guid": "npx --quiet env-cmd --no-override node root.js guid",
+        "env:version": "node -p require('./package.json').version;"
+    },
+    "devDependencies": {
+        "@types/uuid": "^10.0.0",
+        "all-contributors-cli": "^6.26.1",
+        "prettier": "^3.5.3",
+        "rollup-plugin-node-polyfills": "^0.2.1",
+        "uuid": "^10.0.0",
+        "wrangler": "^3.80.4"
+    },
+    "overrides": {
+        "wrangler": {
+            "fill-range": "~7.1.1"
+        }
+    }
+}

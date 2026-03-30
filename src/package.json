@@ -1,0 +1,44 @@
+{
+    "name": "@aetherinox/searxico-worker",
+    "version": "1.2.0",
+    "description": "A self-hosted favicon cloudflare worker for SearXNG Search Engine.",
+    "homepage": "https://github.com/aetherinox/searxico-worker",
+    "homepage_cdn": "https://github.com/aetherinox/searxico-cdn",
+    "author": "Aetherinox",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Aetherinox",
+            "email": "118329232+Aetherinox@users.noreply.github.com",
+            "url": "https://github.com/Aetherinox"
+        },
+        {
+            "name": "EuropaServ",
+            "email": "118329232+Aetherinox@users.noreply.github.com",
+            "url": "https://github.com/EuropaServ"
+        }
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aetherinox/searxico-worker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Aetherinox/searxico-worker/issues"
+    },
+    "keywords": [
+        "aetherinox",
+        "searxico",
+        "searxng",
+        "searx",
+        "favicon",
+        "cloudflare",
+        "cloudflare-worker",
+        "worker",
+        "wrangler",
+        "self-hosting"
+    ],
+    "main": "index.js"
+}
